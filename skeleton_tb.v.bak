@@ -1,0 +1,82 @@
+module skeleton_tb;
+
+    // Signals
+    reg clock, reset;
+    reg [11:0] address_imem_tb;
+    reg [31:0] q_imem_tb;
+    wire [11:0] address_dmem_tb;
+    wire [31:0] data_tb;
+    wire wren_tb;
+    wire [31:0] q_dmem_tb;
+
+    wire ctrl_writeEnable_tb;
+    wire [4:0] ctrl_writeReg_tb, ctrl_readRegA_tb, ctrl_readRegB_tb;
+    wire [31:0] data_writeReg_tb;
+    wire [31:0] data_readRegA_tb, data_readRegB_tb;
+
+    // Instantiate skeleton (which wraps around the processor)
+    skeleton uut (
+        .clock(clock),
+        .reset(reset),
+        .imem_clock(clock),
+        .dmem_clock(clock),
+        .processor_clock(clock),
+        .regfile_clock(clock),
+        // Imem
+        .address_imem(address_imem_tb),
+        .q_imem(q_imem_tb),
+        // Dmem
+        .address_dmem(address_dmem_tb),
+        .data(data_tb),
+        .wren(wren_tb),
+        .q_dmem(q_dmem_tb),
+        // Regfile
+        .ctrl_writeEnable(ctrl_writeEnable_tb),
+        .ctrl_writeReg(ctrl_writeReg_tb),
+        .ctrl_readRegA(ctrl_readRegA_tb),
+        .ctrl_readRegB(ctrl_readRegB_tb),
+        .data_writeReg(data_writeReg_tb),
+        .data_readRegA(data_readRegA_tb),
+        .data_readRegB(data_readRegB_tb)
+    );
+
+    // Clock generation
+    initial clock = 0;
+    always #5 clock = ~clock;
+
+    initial begin
+        reset = 1;
+        #10 reset = 0;
+
+        // Test instruction 1: ADD R1, R2, R3 (Pseudocode)
+        address_imem_tb = 0; // Set to the memory location where instruction is stored
+        q_imem_tb = 32'h00A12345; // Dummy instruction encoding for ADD
+        #10; // Wait for the instruction to process
+        if (data_readRegA_tb != 32'hABCD) // Dummy expected value for ADD
+            $display("Error: ADD operation failed!");
+
+        // Test instruction 2: SUB R4, R5, R6 (Pseudocode)
+        address_imem_tb = 1; 
+        q_imem_tb = 32'h00A67890; // Dummy instruction encoding for SUB
+        #10; // Wait for the instruction to process
+        if (data_readRegA_tb != 32'hFFFF) // Dummy expected value for SUB
+            $display("Error: SUB operation failed!");
+
+        // Test instruction 3: LOAD R7, M[R8] (Pseudocode)
+        address_imem_tb = 2; 
+        q_imem_tb = 32'h00ABCDE0; // Dummy instruction encoding for LOAD
+        #10; // Wait for the instruction to process
+        if (data_readRegA_tb != 32'h1234) // Dummy expected value for LOAD
+            $display("Error: LOAD operation failed!");
+
+        // Test instruction 4: STORE R9, M[R10] (Pseudocode)
+        address_imem_tb = 3; 
+        q_imem_tb = 32'h00A9F012; // Dummy instruction encoding for STORE
+        #10; // Wait for the instruction to process
+        if (q_dmem_tb != 32'h5678) // Dummy expected value for STORE
+            $display("Error: STORE operation failed!");
+
+        #50 $finish;
+    end
+
+endmodule

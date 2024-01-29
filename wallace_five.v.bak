@@ -1,0 +1,17 @@
+module wallace_five(a, b, result);
+	input[4:0] a, b;
+	output[9:0] result;
+	
+	wire s1, s2, s3, s4, s5, s5, s6, s7;
+	wire[4:0] p0, p1, p2, p3, p4;
+	
+	assign p0 = b & {4{a[0]}};
+	assign p1 = b & {4{a[1]}};
+	assign p2 = b & {4{a[2]}};
+	assign p3 = b & {4{a[3]}};
+	assign p4 = b & {4{a[4]}};
+	
+	// First Stage
+	half_adder h1
+	
+	

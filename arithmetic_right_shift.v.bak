@@ -1,0 +1,10 @@
+module arithmetic_right_shift(data_input, ctrl_shiftamt, data_result);
+	
+	input[31:0] data_input;
+	input[4:0] ctrl_shiftamt;
+	
+	output[31:0] data_result;
+	
+	
+	
+endmodule 

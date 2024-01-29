@@ -1,0 +1,17 @@
+module register_32bit(clock, reset, enable, d, q);
+
+	input clock, reset, enable;
+	input [31:0] d;
+	
+	output [31:0] q;
+
+	generate
+	
+		genvar i;
+		for (i = 0; i < 32; i = i + 1) begin : dffe_32
+			dffe_ref dffe(q[i], d[i], clock, enable, reset);
+		end
+		
+	endgenerate
+
+endmodule 

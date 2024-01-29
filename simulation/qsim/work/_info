@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intelFPGA_lite/17.0/ECE_350/Lab_1/simulation/qsim
+vhard_block
+Z1 !s110 1694191849
+!i10b 1
+!s100 YZJNG_9^cQ2`GdLeRT@7R0
+I0VZ93S>RI8k9F17niAlOZ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1694191849
+Z4 8nand_gate.vo
+Z5 Fnand_gate.vo
+L0 372
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1694191849.000000
+Z8 !s107 nand_gate.vo|
+Z9 !s90 -work|work|nand_gate.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vnand_gate
+Z12 !s110 1693921964
+!i10b 1
+!s100 1TU`]C>_4ETm4=3:bofo03
+IDzAO6]ITiG3JH1nA:H`532
+R2
+R0
+w1693921962
+R4
+R5
+Z13 L0 32
+R6
+r1
+!s85 0
+31
+Z14 !s108 1693921964.000000
+R8
+R9
+!i113 1
+R10
+R11
+vnand_gate_vlg_vec_tst
+R12
+!i10b 1
+!s100 WfMDzRfPJnZNX@Fc1nkTk0
+IJLl5;hGQ6Q`Ff:HoRG;E83
+R2
+R0
+w1693921961
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z15 L0 30
+R6
+r1
+!s85 0
+31
+R14
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vrippe_adder
+R1
+!i10b 1
+!s100 1in>c?P^9ZYBU3kUB==@g1
+IPVlC7MFZ_[@9Ea=MKWOeW0
+R2
+R0
+R3
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vrippe_adder_vlg_vec_tst
+!s110 1694191850
+!i10b 1
+!s100 j^Fo<@;CPl;HDkV8Jm`Fi3
+IkPEojH_7VmGeRlQ;dL8>;0
+R2
+R0
+w1694191848
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R15
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11

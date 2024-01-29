@@ -1,0 +1,15 @@
+module full_adder(a, b, c_in, sum, c_out);
+	input a, b, c_in;
+	output sum, c_out;
+	wire w1, w2, w3, w4, w5;
+	
+	xor G1(w1, a, b);
+	xor G2(sum, w1, c_in);
+	and G3(w2, a, b);
+	and G4(w3, a, c_in);
+	and G5(w4, b, c_in);
+	or G6(w5, w2, w3);
+	or G7(c_out, w4, w5);
+endmodule	
+	
+	

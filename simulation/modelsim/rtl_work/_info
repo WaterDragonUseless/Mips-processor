@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lenovo/Desktop/DEC.2 yt210/simulation/modelsim
+valu
+Z1 !s110 1706493578
+!i10b 1
+!s100 HmINV=OQ74nT25mmhd>690
+IGULdYbTQDL9]:YFobz`483
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1706254032
+8C:/Users/lenovo/Desktop/DEC.2 yt210/alu.v
+FC:/Users/lenovo/Desktop/DEC.2 yt210/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1706493578.000000
+!s107 C:/Users/lenovo/Desktop/DEC.2 yt210/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lenovo/Desktop/DEC.2 yt210|C:/Users/lenovo/Desktop/DEC.2 yt210/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/lenovo/Desktop/DEC.2 yt210}
+Z7 tCvgOpt 0
+vcarry_select_adder_32bit
+Z8 !s110 1706493579
+!i10b 1
+!s100 2^O@h^^SjfK?j=hGSBdJP0
+IKjgb3JzQS09AHH6GKDmmb1
+R2
+R0
+Z9 w1706254033
+8C:/Users/lenovo/Desktop/DEC.2 yt210/carry_select_adder_32bit.v
+FC:/Users/lenovo/Desktop/DEC.2 yt210/carry_select_adder_32bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/lenovo/Desktop/DEC.2 yt210/carry_select_adder_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lenovo/Desktop/DEC.2 yt210|C:/Users/lenovo/Desktop/DEC.2 yt210/carry_select_adder_32bit.v|
+!i113 1
+R5
+R6
+R7
+vfull_adder
+R1
+!i10b 1
+!s100 eN3j2:Flon[adSBWQ1`Uh1
+I8T5IiPTB<X;TD:g6OUBI]3
+R2
+R0
+R9
+8C:/Users/lenovo/Desktop/DEC.2 yt210/full_adder.v
+FC:/Users/lenovo/Desktop/DEC.2 yt210/full_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/lenovo/Desktop/DEC.2 yt210/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lenovo/Desktop/DEC.2 yt210|C:/Users/lenovo/Desktop/DEC.2 yt210/full_adder.v|
+!i113 1
+R5
+R6
+R7
+vrippe_carry_adder_16bit
+R8
+!i10b 1
+!s100 Ef[0g@S:eI]PP2EThLEYQ0
+ITLg=W0k;A^[d6zK`FC^In3
+R2
+R0
+w1706254034
+8C:/Users/lenovo/Desktop/DEC.2 yt210/rippe_carry_adder_16bit.v
+FC:/Users/lenovo/Desktop/DEC.2 yt210/rippe_carry_adder_16bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1706493579.000000
+!s107 C:/Users/lenovo/Desktop/DEC.2 yt210/rippe_carry_adder_16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lenovo/Desktop/DEC.2 yt210|C:/Users/lenovo/Desktop/DEC.2 yt210/rippe_carry_adder_16bit.v|
+!i113 1
+R5
+R6
+R7
